@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+        }
+
+        .navbar {
+            background-color: #333;
+            overflow: hidden;
+        }
+
+        .nav-list {
+            list-style-type: none;
+            padding: 0;
+            margin: 0;
+            display: flex;
+            justify-content: center;
+        }
+
+        .nav-item {
+            margin: 0;
+        }
+
+        .nav-item a {
+            display: block;
+            color: white;
+            text-align: center;
+            padding: 14px 20px;
+            text-decoration: none;
+        }
+
+        .nav-item a:hover {
+            background-color: #575757;
+        }
+
+        @media (max-width: 600px) {
+            .nav-list {
+                flex-direction: column;
+            }
+
+            .nav-item a {
+                padding: 10px;
+            }
+        }
+
+        .logo img {
+            height: 100px;
+            padding: 10px;
+        }
+
+        .dropdown  {
+            position: relative;
+        }
+
+        .dropdown-menu {
+            display: none;
+            position: absolute;
+            background-color: #333;
+            list-style-type: none;
+            padding: 0;
+            margin: 0;
+            top: 100%;
+            left: 0;
+        }
+
+        .dropdown-menu li {
+            border-bottom: 1px solid #575757;
+        }
+
+        .dropdown-menu li a {
+            padding: 10px;
+            color: white;
+            display: block;
+            text-decoration: none;
+        }
+
+        .dropdown-menu li a:hover {
+            background-color: #575757;
+        }
+
+        .dropdown:hover .dropdown-menu {
+            display: block;
+        }
+    </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1,0">
+    <title>navbar example</title>
+</head>
+<body>
+    <nav class="navbar">
+        <a href="#home" class="logo"><img src="c:\Users\RYZEN\Pictures\apalaa.jpg" alt="logo"></a>
+        <li class="nav-item dropdown">
+            <a href="#">services</a>
+            <ul class="dropdown-menu">
+                <li><a href="#web-design">web design</a></li>
+                <li><a href="#seo">seo</a></li>
+            </ul>
+
+        </li>
+        <ul class="nav-list">
+            <li class="nav-item"><a href="#home">home</a></li>
+            <li class="nav-item"><a href="#about">about</a></li>
+            <li class="nav-item"><a href="#services">services</a></li>
+            <li class="nav-item"><a href="#contact">contact</a></li>
+        </ul>
+
+    </nav>
+    <h1 style="color: black;">SELAMAT DATANG DI SINI</h1>
+    <h3 style="color: black;">SULTAN</h3>
+
+    <p>GAME KAYAK PES TAPI LEBIH BAIK, PENCET LINK DIBAWAH</p>
+    <img src="c:\sultan\Screenshot 2024-08-10 181915.png" alt="mantap">
+    <a href="https://www.youtube.com/watch?v=oFr5D9zkmTM">MAMPIR SINI</a>
+    <p style="color: black; font-size: 30px;">KLIK LINK DI ATAS BOSKU</p>
+    <p style="color: blue; font-size: 30px;">list list an</p>
+    <ul>
+        <li style="font-size: 22px;">coba 1</li>
+        <li style="font-size: 22px;">coba 2</li>
+    </ul>
+    <p style="color: blue; font-size: 30px;">list aseli</p>
+    <ol>
+        <li style="font-size: 20px;">mantap</li>
+        <li style="font-size: 20px;">seru</li>
+    </ol>
+    <p id="paragraf1" class="teks-utama" style="color: red;">ini adalah putih</p>
+    <table border="2">
+        <tr>
+            <th>rockstar game</th>
+            <th>garena</th>
+        </tr>
+        <tr>
+            <td>gta 5</td>
+            <td>frifayer</td>
+        </tr>
+
+    </table>
+
+    <form action="/submit" method="post">
+        <label for="email">email:</label>
+        <input type="email" id="email" name="name">
+
+        <label for="password">password:</label>
+        <input type="password" id="password" name="password">
+
+        <input type="submit" value="kirim">
+    </form>
+
+</body>
+</html>
